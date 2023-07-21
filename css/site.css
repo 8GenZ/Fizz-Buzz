@@ -16,8 +16,19 @@
     --jg-light-color: #deeefb;
 }
 
-
+/* font-family: 'Tomorrow', sans-serif; */
 /* #region Start Sticky Footer */
+
+.footerLogoText{
+    font-size: 1.5rem;
+    font-family: 'Tomorrow', sans-serif;
+}
+
+.mainLogo {
+    height: 3em;
+    margin-left: -1em;
+
+}
 
 html,
 body {
@@ -36,6 +47,7 @@ main {
 
 footer {
     flex-shrink: 0;
+
 }
 
 /* #endregion  Sticky footer */
@@ -83,4 +95,26 @@ footer {
 .devIcons {
     font-size: 4rem;
     padding-left: .5rem;
+}
+
+.Fizz,
+.Buzz,
+.fizzBuzz {
+    font-weight: bold !important;
+}
+
+
+.Fizz{
+    background-color: var(--jg-theme-200) !important;
+}
+
+
+.Buzz{
+    background-color: var(--jg-theme-800) !important ;
+    color: var(--jg-light-color) !important;
+}
+
+.fizzBuzz {
+background-color: var(--jg-theme-900) !important;
+color: var(--jg-light-color) !important;
 }

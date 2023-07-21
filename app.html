@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>App Name: A Coding Challenge</title>
+    <title>FIZZ BUZZ: A Coding Challenge</title>
 
 
     <!-- bs icons -->
@@ -14,58 +14,107 @@
     <!-- bs css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <!-- custom css -->
     <link rel="stylesheet" href="/css/site.css">
 </head>
 
 <body>
     <header>
-           <nav class="navbar navbar-expand-lg navbar-dark ">
-               <div class="container-fluid">
-                   <a class="navbar-brand" href="/index.html">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
                     <img src="/img/mark.svg" height="50" alt="developer logo">
-                    App Name</a>
-                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                       data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                       aria-label="Toggle navigation">
-                       <span class="navbar-toggler-icon"></span>
-                   </button>
-                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                           <li class="nav-item">
-                               <a class="nav-link" href="/index.html">Home</a>
-                           </li>
-                           <li class="nav-item">
-                               <a class="nav-link active" aria-current="page" href="/app.html">The App</a>
-                           </li>
-                           <li class="nav-item">
-                               <a class="nav-link" href="/code.html">The Code</a>
-                           </li>
-                           <li class="nav-item">
-                               <a class="nav-link" href="https://github.com/8GenZ">The repo</a>
-                           </li>
-                           <li class="nav-item">
-                               <a class="nav-link" href="https://sol-dev-portfolio.netlify.app">About</a>
-                           </li>
-                           <!-- add blog link -->
-                           <li class="nav-item">
-                               <a class="nav-link" href="#">Blog</a>
-                           </li>
-                       </ul>
-                   </div>
-               </div>
-           </nav>
+                    FIZZ BUZZ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/app.html">The App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/code.html">The Code</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/8GenZ/Fizz-Buzz">The repo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://sol-dev-portfolio.netlify.app">About</a>
+                        </li>
+                        <!-- add blog link -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main class="container py-3">
-        <h1>APP UI GOES HERE</h1>
-            <input class="form-control" id="message"
-            placeholder="Enter a message"
-            type="text"
-            value="jonjon"/>
-            <button class="btn btn-primary my-3" id="btnSubmit" type="button">
-                Display Message
-            </button>    
+        <div class="row row-cols-1 row-cols-md-2 gy-3">
+            <div class="col border-end border-start border-2 border-dark">
+                <h1>FIZZ BUZZ: A Coding Challenge</h1>
+                <p class="lead">Fizz? Buzz? FIZZ BUZZ! This app is meant to be a recreation of the classic developer
+                    challenge Fizz Buzz.
+                    The purpose of this program is to create an app that displays a list of numbers and text. If the
+                    number is divisible by either the Fizz value, the Buzz value, or both, it will display the
+                    corresponding text.
+                </p>
+                <h2 class="mt-5 border-bottom border-2 border-dark-subtle display-6">Instructions</h2>
+                <p>
+                    Enter a Fizz value, a Buzz value, and a Stop Value. Press the button
+                    to see the numbers appear on the page!
+                </p>
+            </div>
+            <div class="col">
+                <h5>Enter Values:</h5>
+                <form action="#" class="row g-3">
+
+                    <div class="col-6">
+                        <label class="form-label" for="fizzValue">FIZZ Value:</label>
+                        <input class="form-control" id="fizzValue" name="fizzValue" type="number"
+                            placeholder="FIZZ Value" value="3" aria-label="Fizz Value" />
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label" for="buzzValue">BUZZ Value:</label>
+                        <input class="form-control" id="buzzValue" name="buzzValue" type="number"
+                            placeholder="BUZZ Value" value="5" aria-label="Buzz Value" />
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label" for="stopValue">Stop Value (max:5000)</label>
+                        <input class="form-control" id="stopValue" name="endValue" type="number"
+                            placeholder="Stop Value" value="100" aria-label="Stop Value" />
+                    </div>
+                    <div class="col-12 text-end ">
+                        <button class="btn btn-primary btn-lg w-100" id="btnSubmit" type="button">
+                            Go
+                        </button>
+                    </div>
+                </form>
+                <div class="card p-3 mt-3 shawdow-sm">
+                    <h2 class="border-2 border-bottom border-dark-subtle">Results</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-sm">
+                            <tbody id="results">
+                                <!-- results go here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="footer container-fluid py-3">
@@ -73,9 +122,14 @@
             <div class="row row-cols-1 row-cols-lg-3 align-items-center gy-2 text-center">
                 <div class="col text-lg-start">
                     &copy; 2023 Jonathan Chavez
-                </div> 
+                </div>
                 <div class="col">
-                    <img height="45px" src="img/fixed logo correct (1).svg">
+                    <div class="footerLogoText ms-5">
+                        Jonathan Chavez
+                        <span>
+                            <img src="/img/mark.svg" alt="Jonathan Chavez dev Logo" class="mainLogo" />
+                        </span>
+                    </div>
                 </div>
                 <div class="col text-lg-end">
                     <a href="#"><i class="socialIcons bi bi-linkedin"></i> </a>
@@ -84,6 +138,7 @@
                     <a href="mailto:jonachav6414@gmail.com"><i class="socialIcons bi bi-envelope-fill"></i></a>
                 </div>
             </div>
+        </div>
         </div>
     </footer>
 
@@ -100,7 +155,7 @@
     <script src="/js/site.js"></script>
 
     <script>
-        document.getElementById('btnSubmit').addEventListener('click', displayMessage);
+        document.getElementById('btnSubmit').addEventListener('click', getValues);
     </script>
 </body>
 
