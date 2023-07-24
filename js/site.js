@@ -27,7 +27,15 @@ function getValues() {
             icon: 'error',
             backdrop: false
         });
-    } else {
+    }else if (stopNumber > 5000) {
+        Swal.fire({
+            title: 'Oops!',
+            text: 'Please make sure stop value is below 5000.',
+            icon: 'error',
+            backdrop: false
+        });
+    }
+     else {
         let numberArray = generateFizzBuzz(fizzNumber, buzzNumber, stopNumber);
 
             displayFizzBuzz(numberArray);
@@ -53,7 +61,7 @@ function generateFizzBuzz(Fizz, Buzz, Stop) {
 
         if (number % Fizz == 0 ) results += 'Fizz';
         if (number % Buzz == 0) results += 'Buzz';
-        if (number % Fizz, Buzz == 0) results += 'Fizz Buzz'
+        if (number % Fizz, Buzz == 0) results += 'Fizz Buzz';
 
         range.push(results || number);
 
