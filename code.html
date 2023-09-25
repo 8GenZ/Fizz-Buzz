@@ -169,9 +169,24 @@ function displayFizzBuzz(range) {
                 </pre>
             </div>
             <div class="col-12 col-lg-4">
-                <p>The Code is structured in one funtion</p>
-                <h5>displayMessage</h5>
-                <p>Shows a Sweetalert with the value of the <code>message</code> variable
+                <p>The Code is structured in three funtions</p>
+                <h5>getValues</h5>
+                <p>This purpose if this function is to retrieve input
+                    values and then validates these values to ensure they are integers
+                    and that they meet certain criteria. If the inputs are valid, it proceeds to call the
+                    generateFizzBuzz() fumction, and the view function, displayFizzBuzz(), to display the results.
+                    Additionally, it displays error messages using the Swal library when necessary
+                </p>
+                <h5>generateFizzBuzz</h5>
+                <p> This function handles the generating of the FizzBuzz sequence. Firsy it creates an array of
+                    numbers based on the input parameters Fizz, Buzz, and Stop. For each number in the specified range,
+                    it determines whether it should be replaced with "Fizz," "Buzz," or "FizzBuzz" according to certain
+                    conditions. The results are stored in the range array, which is then returned.
+                </p>
+                <h5>displayFizzBuzz</h5>
+                <p> This function is responsible for displaying the FizzBuzz results on the web page. It 
+                    generates table for displaying the FizzBuzz and it assigns specific CSS classes to elements based on their content (e.g., 'Fizz,'
+                    'Buzz,' or 'FizzBuzz') to control the styling.
                 </p>
             </div>
         </div>

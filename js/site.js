@@ -59,9 +59,9 @@ function generateFizzBuzz(Fizz, Buzz, Stop) {
 
         let results = "";
 
+        if (number % Fizz, Buzz == 0) results += 'Fizz Buzz';
         if (number % Fizz == 0 ) results += 'Fizz';
         if (number % Buzz == 0) results += 'Buzz';
-        if (number % Fizz, Buzz == 0) results += 'Fizz Buzz';
 
         range.push(results || number);
 
